@@ -9,5 +9,6 @@ size = 5
 x = -14
 y = 63
 z = 14
+blockType = param.STONE
 for num in range(size):
-    mc.setBlocks(x+size-1-num, y+num, z+size-1-num, x-size+1+num, y+num, z-size+1+num, param.AIR)
+    mc.setBlocks(x+size-1-num, y+num, z+size-1-num, x-size+1+num, y+num, z-size+1+num, blockType)
