@@ -4,7 +4,9 @@ from mcje.minecraft import Minecraft
 import param_MCJE as param
 
 mc = Minecraft.create(port=param.PORT_MC)
-
+#sizeはピラミッドの段数
+#x,y,zは作成されるピラミッドの中心となる座標
+#blockTypeはピラミッドの材質
 size = 5
 x = -14
 y = 63
