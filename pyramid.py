@@ -7,10 +7,9 @@ mc = Minecraft.create(port=param.PORT_MC)
 #sizeはピラミッドの段数
 #x,y,zは作成されるピラミッドの中心となる座標
 #blockTypeはピラミッドの材質
-size = 5
-x = -14
-y = 63
-z = 14
-blockType = param.STONE
-for num in range(size):
-    mc.setBlocks(x+size-1-num, y+num, z+size-1-num, x-size+1+num, y+num, z-size+1+num, blockType)
+
+def pyramid(size, x, y, z, blockType):
+    for num in range(size):
+        mc.setBlocks(x+size-1-num, y+num, z+size-1-num, x-size+1+num, y+num, z-size+1+num, blockType)
+
+pyramid(10, 10, 63, 10, param.SEA_LANTERN_BLOCK)

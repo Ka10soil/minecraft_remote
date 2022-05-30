@@ -2,6 +2,9 @@
 # Connection and blockID : MCJE
 # World parameters : MCJE
 
+from mcje.block import WATER
+
+
 print("param_MCJE loaded")
 
 # axis parameters
@@ -36,3 +39,4 @@ DIAMOND_BLOCK = "diamnd_block"
 FURNACE_INACTIVE = "furnace"
 FURNACE_ACTIVE = "lit_furnace"
 GLASS_PANE = "glass_pane"
+WATER = "water"
