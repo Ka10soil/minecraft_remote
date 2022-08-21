@@ -12,4 +12,3 @@ def pyramid(size, x, y, z, blockType):
     for num in range(size):
         mc.setBlocks(x+size-1-num, y+num, z+size-1-num, x-size+1+num, y+num, z-size+1+num, blockType)
 
-pyramid(10, 10, 63, 10, param.SEA_LANTERN_BLOCK)
